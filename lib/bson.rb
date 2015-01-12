@@ -81,6 +81,8 @@ begin
   if BSON::Environment.jruby?
     require "bson-ruby.jar"
     org.bson.NativeService.new.basicLoad(JRuby.runtime)
+  elsif ! ENV["BSON_USE_RUBY"].nil?
+    raise LoadError
   else
     require "native"
   end
