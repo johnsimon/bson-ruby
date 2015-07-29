@@ -13,5 +13,5 @@
 # limitations under the License.
 
 module BSON
-  VERSION = "2.2.3"
+  VERSION = "2.2.3.tapjoy.1"
 end
